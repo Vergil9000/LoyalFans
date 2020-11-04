@@ -1,0 +1,14 @@
+{
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9",
+        "DNT": "1",
+        "Referer": "https://www.loyalfans.com/",
+        "authorization": "",
+        "User-Agent": ""
+    },
+    "settings": {
+        "download_preview_videos": true
+    }
+}
