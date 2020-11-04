@@ -1,6 +1,8 @@
 # LoyalFans
 Download photos and videos from your favorite creator on LoyalFans
 
+![terminal](images/terminal.png)
+
 # Requirements
 Created with Python 3.9 but 3.8 ought to work as well.
 
@@ -24,7 +26,13 @@ on macOS:
 
 `Command + Option + C`
 
-Once the developer tools are open, click on the "Network" tab at the top. While your tools are still up, scroll down on the page force that user's posts to load. You should see something that looks like `username?limit=4&page=#`. Click on that and then scroll down until you see "Request Headers". Copy the text that corresponds to "authorization" (make sure you include the word 'Bearer') and paste it into the corresponding spot in the `settings.json` file. Make sure it's in the quotation marks.
+Once the developer tools are open, click on the "Network" tab at the top. While your tools are still up, scroll down on the page force that user's posts to load. You should see something that looks like `username?limit=4&page=#`:
+
+![limit](images/limit.png)
+
+Click on that and then scroll down until you see "Request Headers". Copy the text that corresponds to "authorization" (make sure you include the word 'Bearer') and paste it into the corresponding spot in the `settings.json` file. Make sure it's in the quotation marks.
+
+![authorization](images/authorization.png)
 
 Scroll a little further down in the "Request Headers" and you should also see a field called "User-Agent". Copy the corresponding text and paste it into its corresponding spot in the `settings.json` file as well.
 
