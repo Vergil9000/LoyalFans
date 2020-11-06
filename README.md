@@ -40,6 +40,7 @@ Once that's done, you're good to go.
 
 # Usage
 *macOS users and (probably) Linux users should use python3*
+
 To start downloading, run the following in the command line:
 
 `python loyalfans.py`
