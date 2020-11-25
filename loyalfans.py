@@ -5,7 +5,7 @@ import concurrent.futures
 
 import requests
 from tqdm import tqdm
-from blessings import Terminal
+from blessed import Terminal
 
 
 def main():
