@@ -1,0 +1,23 @@
+{
+    "config": {
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "en-US,en;q=0.9",
+            "DNT": "1",
+            "Referer": "https://www.loyalfans.com/",
+            "authorization": "",
+            "User-Agent": ""
+        },
+        "settings": {
+            "destination_path": "",
+            "separate_file_types": true,
+            "download_preview_videos": true,
+            "avoid_duplicates": true
+        },
+        "urls": {
+            "profile_url": "https://www.loyalfans.com/api/v2/profile/star/{}/",
+            "timeline_url": "https://www.loyalfans.com/api/v2/social/timeline/{}?limit={}&page=0/"
+        }
+    }
+}
