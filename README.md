@@ -53,8 +53,27 @@ To start downloading, run the following in the command line:
 
 You will then be prompted for a username. Enter the username that corresponds to the page you want to scrape. For example, if you want to scrape loyalfans.com/user, then you would enter `user`.
 
-# Optional Settings
-If you are trying to download content from a creator that you're not **subscribed** to (but you're following them), you'll sometimes see that the creator offers a short preview of videos that are only available to *subscribers* and **not** *followers*. The scraper is set by default to scrape those short preview videos. If you would like to skip those videos, open the 'settings.json' file and change the **true** value to **false** next to "download_preview_videos". It *is* case-sensitive.
+# Options
+
+`destination_path`
+
+* Default: `""`
+* This will allow you to specify a directory for the content to be stored. If left blank, it will store the content in the current working directory.
+
+`separate_file_types`
+
+* Default: `true`
+* This filters file types (images, videos) into their own subdirectories. Setting this to `false` will store all file types into one single directory.
+
+`download_preview_videos`
+
+* Default: `true`
+* You'll sometimes be able to view video previews of videos that are only exclusive to subscribers. If you would like to download those previews, leave this set to `true`
+
+`avoid_duplicates`
+
+* Default: `true`
+* This is nothing special; it uses existing file names to determine which files have already been downloaded and which files should be ignored. If you set this to `false`, every time you scrape a profile that you've already scraped, existing files will be overwritten. I may extend this in the future to use hashes rather than file names.
 
 # Things to Note
-1. I have *not* subscribed to a profile on LoyalFans. This means that I'm uncertain if this will catch *all* media (referring to photos/videos that are only available to subscribers). I can, however, confirm that this will catch all media that is accessible to the "public" and to "followers". If you notice that the script isn't catching "subscriber-only" media, please file an [issue](https://github.com/Amenly/LoyalFans/issues/new).
+1. Since the last time I wrote this, I have been able to confirm that this script *will* download content from users you're subscribed to. If you notice that it's not catching certain items, please [file an issue](https://github.com/Amenly/LoyalFans/issues/new).
