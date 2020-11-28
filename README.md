@@ -26,7 +26,7 @@ on macOS:
 
 `Command + Option + C`
 
-Once the developer tools are open, click on the "Network" tab at the top. While the developer tools are still up, scroll down on user's page to force that user's posts to load. You should see something that looks like `username?limit=4&page=#`:
+Once the developer tools are open, click on the "Network" tab at the top. While the developer tools are still up, scroll down on the user's page to force some of their posts to load. You should then see something that looks like `username?limit=4&page=#`:
 
 ![limit](images/limit.png)
 
