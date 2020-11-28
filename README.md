@@ -16,7 +16,7 @@ In the command line, run the following (*macOS users and (probably) Linux users 
   If that didn't work, it's probably because you're not in the same directory as the 'requirements.txt' file.
 </details>
 
-Keep the `settings.json` and the `loyalfans.py` files in the same directory.
+Keep the `config.json` and the `loyalfans.py` files in the same directory.
 
 Here comes the slightly complicated part. You need to log in to your LoyalFans account, go to a creator's page, and then open your browser's developer tools. To do this in Chrome on Windows or Linux, hit the following:
 
@@ -26,15 +26,15 @@ on macOS:
 
 `Command + Option + C`
 
-Once the developer tools are open, click on the "Network" tab at the top. While your tools are still up, scroll down on the page force that user's posts to load. You should see something that looks like `username?limit=4&page=#`:
+Once the developer tools are open, click on the "Network" tab at the top. While the developer tools are still up, scroll down on user's page to force that user's posts to load. You should see something that looks like `username?limit=4&page=#`:
 
 ![limit](images/limit.png)
 
-Click on that and then scroll down until you see "Request Headers". Copy the text that corresponds to "authorization" (make sure you include the word 'Bearer') and paste it into the corresponding spot in the `settings.json` file. Make sure it's in the quotation marks.
+Click on that and then scroll down until you see "Request Headers". Copy the text that corresponds to "authorization" (make sure you include the word 'Bearer') and paste it into the corresponding spot in the `config.json` file. Make sure it's in the quotation marks.
 
 ![authorization](images/authorization.png)
 
-Scroll a little further down in the "Request Headers" and you should also see a field called "User-Agent". Copy the corresponding text and paste it into its corresponding spot in the `settings.json` file as well.
+Scroll a little further down in the "Request Headers" and you should also see a field called "User-Agent". Copy the corresponding text and paste it into its corresponding spot in the `config.json` file as well.
 
 Once that's done, you're good to go.
 
