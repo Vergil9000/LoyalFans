@@ -4,11 +4,15 @@ Download photos and videos from your favorite creator on LoyalFans
 ![terminal](images/terminal.png)
 
 # Requirements
-Created with Python 3.9 but 3.8 ought to work as well.
+***Created with Python 3.9 but Python 3.8 ought to work as well***
 
-In the command line, run the following (*macOS users and (probably) Linux users should use pip3*):
+In the command line, run the following:
 
 `pip install -r requirements.txt`
+
+*macOS users and Linux users should use pip3*:
+
+`pip3 install -r requirements.txt`
 
 <details>
   <summary>FYI</summary>
@@ -39,11 +43,13 @@ Scroll a little further down in the "Request Headers" and you should also see a 
 Once that's done, you're good to go.
 
 # Usage
-*macOS users and (probably) Linux users should use python3*
-
 To start downloading, run the following in the command line:
 
 `python loyalfans.py`
+
+*macOS users and Linux users should use python3*:
+
+`python3 loyalfans.py`
 
 <details>
   <summary>FYI</summary>
