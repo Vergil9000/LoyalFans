@@ -54,11 +54,13 @@ To start downloading, run the following in the command line:
 You will then be prompted for a username. Enter the username that corresponds to the page you want to scrape. For example, if you want to scrape loyalfans.com/user, then you would enter `user`.
 
 # Options
+***The following options can be customized in the `config.json` file:***
 
 `destination_path`
 
 * Default: `""`
 * This will allow you to specify a directory for the content to be stored. If left blank, it will store the content in the current working directory.
+* Example: "Users/user/Downloads/secret_folder"
 
 `separate_file_types`
 
