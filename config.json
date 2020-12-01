@@ -13,11 +13,13 @@
             "destination_path": "",
             "separate_file_types": true,
             "download_preview_videos": true,
-            "avoid_duplicates": true
+            "avoid_duplicates": true,
+            "use_original_dates": true
         },
         "urls": {
             "profile_url": "https://www.loyalfans.com/api/v2/profile/star/{}/",
-            "timeline_url": "https://www.loyalfans.com/api/v2/social/timeline/{}?limit={}&page=0/"
+            "timeline_url": "https://www.loyalfans.com/api/v2/social/timeline/{}?limit={}&page=0/",
+            "messages_url": "https://www.loyalfans.com/api/v1/messages/with/{}"
         }
     }
 }
