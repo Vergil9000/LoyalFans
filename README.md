@@ -83,5 +83,10 @@ You will then be prompted for a username. Enter the username that corresponds to
 * Default: `true`
 * This is nothing special; it uses existing file names to determine which files have already been downloaded and which files should be ignored. If you set this to `false`, every time you scrape a profile that you've already scraped, existing files will be overwritten. I may extend this in the future to use hashes rather than file names.
 
+`use_original_dates`
+
+* Default: `true`
+* While this is set to `true`, downloaded files will have their 'created date' and 'modified date' reflect the dates when the content creator uploaded them to LoyalFans.
+
 # Things to Note
 1. Since the last time I wrote this, I have been able to confirm that this script *will* download content from users you're subscribed to. If you notice that it's not catching certain items, please [file an issue](https://github.com/Amenly/LoyalFans/issues/new).
