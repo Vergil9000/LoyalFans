@@ -1,3 +1,4 @@
 blessed
+python-dateutil
 requests
 tqdm
