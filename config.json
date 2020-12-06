@@ -14,12 +14,17 @@
             "separate_file_types": true,
             "download_preview_videos": true,
             "avoid_duplicates": true,
-            "use_original_dates": true
+            "use_original_dates": true,
+            "timezone": "America/New_York",
+            "debug": 0
         },
         "urls": {
+            "user_url": "https://www.loyalfans.com/api/v2/profile",
+            "follow_url": "https://www.loyalfans.com/api/v1/follow",
             "profile_url": "https://www.loyalfans.com/api/v2/profile/star/{}/",
             "timeline_url": "https://www.loyalfans.com/api/v2/social/timeline/{}?limit={}&page=0/",
-            "messages_url": "https://www.loyalfans.com/api/v1/messages/with/{}"
+            "messages_url": "https://www.loyalfans.com/api/v1/messages/with/{}?timezone={}{}",
+            "video_store_url": "https://www.loyalfans.com/api/v2/timeline/store"
         }
     }
 }
