@@ -20,7 +20,7 @@ In the command line, run the following:
   If that didn't work, it's probably because you're not in the same directory as the 'requirements.txt' file.
 </details>
 
-Keep the `config.json` and the `loyalfans.py` files in the same directory.
+Keep the `config.json` and `loyalfans.py` files ***and*** the `logs` subdirectory in the same directory.
 
 Here comes the slightly complicated part. You need to log in to your LoyalFans account, go to a creator's page, and then open your browser's developer tools. To do this in Chrome on Windows or Linux, hit the following:
 
@@ -57,7 +57,7 @@ To start downloading, run the following in the command line:
   If that didn't work, it's probably because you're not in the same directory as the 'loyalfans.py' file.
 </details>
 
-You will then be prompted for a username. Enter the username that corresponds to the page you want to scrape. For example, if you want to scrape loyalfans.com/user, then you would enter `user`.
+You will then be shown a list of numbers next to the users you're following. Enter the corresponding number to scrape their content.
 
 # Options
 ***The following options can be customized in the*** `config.json` ***file:***
@@ -66,7 +66,7 @@ You will then be prompted for a username. Enter the username that corresponds to
 
 * Default: `""`
 * This will allow you to specify a directory for the content to be stored. If left blank, it will store the content in the current working directory.
-* Example: "Users/user/Downloads/secret_folder"
+* Example: `"Users/user/Downloads/secret_folder"`
 
 `separate_file_types`
 
@@ -87,6 +87,11 @@ You will then be prompted for a username. Enter the username that corresponds to
 
 * Default: `true`
 * While this is set to `true`, downloaded files will have their 'created date' and 'modified date' reflect the dates when the content creator uploaded them to LoyalFans.
+
+`timezone`
+
+* Default: `"America/New_York"`
+* You don't necessarily need to change this field, but I recommend changing it to your own [TZ timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). This [site](http://efele.net/maps/tz/) may help.
 
 # Things to Note
 1. Since the last time I wrote this, I have been able to confirm that this script *will* download content from users you're subscribed to. If you notice that it's not catching certain items, please [file an issue](https://github.com/Amenly/LoyalFans/issues/new).
