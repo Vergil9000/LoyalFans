@@ -1,7 +1,7 @@
 # LoyalFans
 Download photos and videos from your favorite creator on LoyalFans
 
-![terminal](images/terminal.png)
+![terminal](images/terminal2.png)
 
 # Requirements
 ***Created with Python 3.9 but Python 3.8 ought to work as well***
