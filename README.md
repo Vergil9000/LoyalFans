@@ -42,6 +42,12 @@ Scroll a little further down in the "Request Headers" and you should also see a 
 
 Once that's done, you're good to go.
 
+<details>
+  <summary>BTW</summary>
+  <br>
+  You don't need a different 'authorization' cookie for each creator that you're subscribed to. Just get one and that one should work for every creator you're subscribed to/following. If your cookie expires, the script will tell you.
+</details>
+
 # Usage
 To start downloading, run the following in the command line:
 
