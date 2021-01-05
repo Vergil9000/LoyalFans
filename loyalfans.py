@@ -370,6 +370,7 @@ def wait(num):
 def get_timestamp(date):
     iso_datetime = parse(date)
     timezone = time.strftime('%z', time.gmtime())
+    timezone = timezone.replace('+', '')
     if timezone == '0000':
         timezone = 0
     else:
